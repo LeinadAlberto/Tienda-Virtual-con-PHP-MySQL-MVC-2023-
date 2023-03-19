@@ -11,6 +11,7 @@
             $data["title"] = "Página Principal";
             $this->views->getView("home", "index", $data);
         }
+        
     }
 
 ?>
