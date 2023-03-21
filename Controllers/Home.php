@@ -10,6 +10,7 @@
         public function index() {
             $data["title"] = "Página Principal";
             $data["categorias"] = $this->model->getCategorias();
+            $data["nuevosProductos"] = $this->model->getNuevosProductos();
             /* echo "<pre>";
             print_r($data);
             exit;

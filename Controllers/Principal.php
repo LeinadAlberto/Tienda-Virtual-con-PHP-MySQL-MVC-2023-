@@ -25,7 +25,8 @@
 
         /* Vista Detalle de Producto */
         public function detail($id_producto) {
-            $data["title"] = "Detalle Producto";
+            $data["producto"] = $this->model->getProducto($id_producto);
+            $data["title"] = $data["producto"]["nombre"];
             $this->views->getView("principal", "detail", $data);
         }
 
